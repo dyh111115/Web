@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="440" viewBox="0 0 1080 440">
+  <rect width="1080" height="440" fill="#ffffff"/>
+  <text x="540" y="42" text-anchor="middle" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="28" font-weight="700" fill="#172033">对象生命周期</text>
+  <defs><marker id="a2" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#64748b"/></marker></defs>
+  <g font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" text-anchor="middle">
+    <text x="40" y="98" font-size="20" font-weight="700" fill="#0c4a6e" text-anchor="start">栈对象</text>
+    <rect x="45" y="118" width="175" height="74" rx="14" fill="#e0f2fe" stroke="#38bdf8"/>
+    <text x="132" y="148" font-size="17" font-weight="700" fill="#0c4a6e">进入作用域</text><text x="132" y="172" font-size="14" fill="#334155">创建对象</text>
+    <rect x="280" y="118" width="175" height="74" rx="14" fill="#dcfce7" stroke="#4ade80"/>
+    <text x="367" y="148" font-size="17" font-weight="700" fill="#166534">调用构造函数</text><text x="367" y="172" font-size="14" fill="#334155">open</text>
+    <rect x="515" y="118" width="175" height="74" rx="14" fill="#fef3c7" stroke="#fbbf24"/>
+    <text x="602" y="148" font-size="17" font-weight="700" fill="#92400e">使用对象</text><text x="602" y="172" font-size="14" fill="#334155">. 调用成员函数</text>
+    <rect x="750" y="118" width="285" height="74" rx="14" fill="#fce7f3" stroke="#f472b6"/>
+    <text x="892" y="148" font-size="17" font-weight="700" fill="#9d174d">离开作用域 → 自动析构</text><text x="892" y="172" font-size="14" fill="#334155">close</text>
+    <line x1="220" y1="155" x2="271" y2="155" stroke="#64748b" stroke-width="3" marker-end="url(#a2)"/>
+    <line x1="455" y1="155" x2="506" y2="155" stroke="#64748b" stroke-width="3" marker-end="url(#a2)"/>
+    <line x1="690" y1="155" x2="741" y2="155" stroke="#64748b" stroke-width="3" marker-end="url(#a2)"/>
+
+    <text x="40" y="270" font-size="20" font-weight="700" fill="#5b21b6" text-anchor="start">堆对象</text>
+    <rect x="45" y="290" width="175" height="74" rx="14" fill="#ede9fe" stroke="#a78bfa"/>
+    <text x="132" y="320" font-size="17" font-weight="700" fill="#5b21b6">new</text><text x="132" y="344" font-size="14" fill="#334155">分配对象</text>
+    <rect x="280" y="290" width="175" height="74" rx="14" fill="#dcfce7" stroke="#4ade80"/>
+    <text x="367" y="320" font-size="17" font-weight="700" fill="#166534">调用构造函数</text><text x="367" y="344" font-size="14" fill="#334155">open</text>
+    <rect x="515" y="290" width="175" height="74" rx="14" fill="#fef3c7" stroke="#fbbf24"/>
+    <text x="602" y="320" font-size="17" font-weight="700" fill="#92400e">通过指针使用</text><text x="602" y="344" font-size="14" fill="#334155">ptr-&gt;show()</text>
+    <rect x="750" y="290" width="285" height="74" rx="14" fill="#fee2e2" stroke="#f87171"/>
+    <text x="892" y="320" font-size="17" font-weight="700" fill="#991b1b">delete → 调用析构</text><text x="892" y="344" font-size="14" fill="#334155">close</text>
+    <line x1="220" y1="327" x2="271" y2="327" stroke="#64748b" stroke-width="3" marker-end="url(#a2)"/>
+    <line x1="455" y1="327" x2="506" y2="327" stroke="#64748b" stroke-width="3" marker-end="url(#a2)"/>
+    <line x1="690" y1="327" x2="741" y2="327" stroke="#64748b" stroke-width="3" marker-end="url(#a2)"/>
+    <text x="540" y="414" text-anchor="middle" font-size="15" fill="#475569">核心：构造函数负责建立对象，析构函数负责收尾。</text>
+  </g>
+</svg>

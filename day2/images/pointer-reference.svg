@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="390" viewBox="0 0 1080 390">
+  <rect width="1080" height="390" fill="#ffffff"/>
+  <text x="540" y="42" text-anchor="middle" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="28" font-weight="700" fill="#172033">指针与引用</text>
+  <defs>
+    <marker id="a3" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#64748b"/></marker>
+    <filter id="s3" x="-10%" y="-10%" width="120%" height="130%"><feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#0f172a" flood-opacity="0.12"/></filter>
+  </defs>
+  <g font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" text-anchor="middle">
+    <rect x="55" y="95" width="290" height="210" rx="20" fill="#e0f2fe" stroke="#38bdf8" stroke-width="2" filter="url(#s3)"/>
+    <text x="200" y="133" font-size="22" font-weight="700" fill="#0c4a6e">指针</text>
+    <text x="200" y="169" font-size="18" fill="#0f172a">int* p = &amp;value;</text>
+    <text x="200" y="204" font-size="15" fill="#334155">保存对象地址</text>
+    <text x="200" y="231" font-size="15" fill="#334155">可以为 nullptr、可重新指向</text>
+    <text x="200" y="258" font-size="15" fill="#334155">访问值：*p</text>
+    <text x="200" y="285" font-size="15" fill="#334155">访问成员：p-&gt;show()</text>
+
+    <rect x="395" y="95" width="290" height="210" rx="20" fill="#dcfce7" stroke="#4ade80" stroke-width="2" filter="url(#s3)"/>
+    <text x="540" y="133" font-size="22" font-weight="700" fill="#166534">引用</text>
+    <text x="540" y="169" font-size="18" fill="#0f172a">int&amp; r = value;</text>
+    <text x="540" y="204" font-size="15" fill="#334155">已有变量的别名</text>
+    <text x="540" y="231" font-size="15" fill="#334155">必须初始化，通常不能改绑</text>
+    <text x="540" y="258" font-size="15" fill="#334155">像普通变量一样使用：r</text>
+    <text x="540" y="285" font-size="15" fill="#334155">修改 r 就是修改原变量</text>
+
+    <rect x="735" y="95" width="290" height="210" rx="20" fill="#fef3c7" stroke="#fbbf24" stroke-width="2" filter="url(#s3)"/>
+    <text x="880" y="133" font-size="22" font-weight="700" fill="#92400e">容易混淆的符号</text>
+    <text x="880" y="174" font-size="17" fill="#0f172a">&amp;value → 取地址</text>
+    <text x="880" y="205" font-size="17" fill="#0f172a">int&amp; r → 声明引用</text>
+    <text x="880" y="236" font-size="17" fill="#0f172a">*p → 解引用</text>
+    <text x="880" y="267" font-size="17" fill="#0f172a">int* p → 声明指针</text>
+    <line x1="345" y1="200" x2="386" y2="200" stroke="#64748b" stroke-width="3" marker-end="url(#a3)"/>
+    <line x1="685" y1="200" x2="726" y2="200" stroke="#64748b" stroke-width="3" marker-end="url(#a3)"/>
+    <text x="540" y="355" text-anchor="middle" font-size="15" fill="#475569">记忆：对象用 .，对象指针用 -&gt;；引用使用起来像对象本身。</text>
+  </g>
+</svg>

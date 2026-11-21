@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="420" viewBox="0 0 1100 420">
+  <rect width="1100" height="420" fill="#ffffff"/>
+  <text x="550" y="44" text-anchor="middle" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="28" font-weight="700" fill="#172033">三种常用标准容器</text>
+  <defs><filter id="s2" x="-10%" y="-10%" width="120%" height="130%"><feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#0f172a" flood-opacity="0.12"/></filter></defs>
+  <g font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" text-anchor="middle">
+    <rect x="40" y="85" width="315" height="265" rx="20" fill="#e0f2fe" stroke="#38bdf8" stroke-width="2" filter="url(#s2)"/>
+    <text x="197" y="128" font-size="23" font-weight="700" fill="#0c4a6e">std::string</text>
+    <text x="197" y="165" font-size="16" fill="#334155">保存一段文本</text>
+    <text x="197" y="204" font-size="15" fill="#0f172a">size() / empty()</text>
+    <text x="197" y="232" font-size="15" fill="#0f172a">find() / substr()</text>
+    <text x="197" y="260" font-size="15" fill="#0f172a">+= 拼接字符串</text>
+    <text x="197" y="305" font-size="15" fill="#475569">例：用户名、密码、请求路径</text>
+
+    <rect x="392" y="85" width="315" height="265" rx="20" fill="#dcfce7" stroke="#4ade80" stroke-width="2" filter="url(#s2)"/>
+    <text x="549" y="128" font-size="23" font-weight="700" fill="#166534">std::vector</text>
+    <text x="549" y="165" font-size="16" fill="#334155">保存一组动态数据</text>
+    <text x="549" y="204" font-size="15" fill="#0f172a">push_back() / pop_back()</text>
+    <text x="549" y="232" font-size="15" fill="#0f172a">size() / empty()</text>
+    <text x="549" y="260" font-size="15" fill="#0f172a">按索引访问 vec[i]</text>
+    <text x="549" y="305" font-size="15" fill="#475569">例：多个路径、连接、任务</text>
+
+    <rect x="744" y="85" width="315" height="265" rx="20" fill="#fef3c7" stroke="#fbbf24" stroke-width="2" filter="url(#s2)"/>
+    <text x="901" y="128" font-size="23" font-weight="700" fill="#92400e">std::map</text>
+    <text x="901" y="165" font-size="16" fill="#334155">保存“键 → 值”</text>
+    <text x="901" y="204" font-size="15" fill="#0f172a">find() / insert() / erase()</text>
+    <text x="901" y="232" font-size="15" fill="#0f172a">it-&gt;first / it-&gt;second</text>
+    <text x="901" y="260" font-size="15" fill="#0f172a">users[key] = value</text>
+    <text x="901" y="305" font-size="15" fill="#475569">例：用户名 → 密码</text>
+    <text x="550" y="392" text-anchor="middle" font-size="15" fill="#475569">查询 map 时优先使用 find()，不要用 operator[] 做纯查找。</text>
+  </g>
+</svg>

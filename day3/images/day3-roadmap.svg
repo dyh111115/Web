@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="360" viewBox="0 0 1100 360">
+  <rect width="1100" height="360" fill="#ffffff"/>
+  <text x="550" y="44" text-anchor="middle" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="28" font-weight="700" fill="#172033">Day 3 学习路线</text>
+  <defs>
+    <marker id="a" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#64748b"/></marker>
+    <filter id="s" x="-10%" y="-10%" width="120%" height="130%"><feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#0f172a" flood-opacity="0.12"/></filter>
+  </defs>
+  <g font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" text-anchor="middle">
+    <rect x="28" y="103" width="145" height="88" rx="15" fill="#e0f2fe" stroke="#38bdf8" filter="url(#s)"/>
+    <text x="100" y="137" font-size="18" font-weight="700" fill="#0c4a6e">std::string</text><text x="100" y="164" font-size="14" fill="#334155">保存文本</text>
+    <rect x="190" y="103" width="145" height="88" rx="15" fill="#dcfce7" stroke="#4ade80" filter="url(#s)"/>
+    <text x="262" y="137" font-size="18" font-weight="700" fill="#166534">std::vector</text><text x="262" y="164" font-size="14" fill="#334155">动态数组</text>
+    <rect x="352" y="103" width="145" height="88" rx="15" fill="#fef3c7" stroke="#fbbf24" filter="url(#s)"/>
+    <text x="424" y="137" font-size="18" font-weight="700" fill="#92400e">std::map</text><text x="424" y="164" font-size="14" fill="#334155">键值表</text>
+    <rect x="514" y="103" width="145" height="88" rx="15" fill="#fce7f3" stroke="#f472b6" filter="url(#s)"/>
+    <text x="586" y="137" font-size="18" font-weight="700" fill="#9d174d">用户查询</text><text x="586" y="164" font-size="14" fill="#334155">find / second</text>
+    <rect x="676" y="103" width="145" height="88" rx="15" fill="#ede9fe" stroke="#a78bfa" filter="url(#s)"/>
+    <text x="748" y="137" font-size="18" font-weight="700" fill="#5b21b6">RAII</text><text x="748" y="164" font-size="14" fill="#334155">生命周期管理</text>
+    <rect x="838" y="103" width="230" height="88" rx="15" fill="#fee2e2" stroke="#f87171" filter="url(#s)"/>
+    <text x="953" y="137" font-size="18" font-weight="700" fill="#991b1b">FdGuard</text><text x="953" y="164" font-size="14" fill="#334155">open / 保存 fd / close</text>
+    <line x1="173" y1="147" x2="181" y2="147" stroke="#64748b" stroke-width="3" marker-end="url(#a)"/>
+    <line x1="335" y1="147" x2="343" y2="147" stroke="#64748b" stroke-width="3" marker-end="url(#a)"/>
+    <line x1="497" y1="147" x2="505" y2="147" stroke="#64748b" stroke-width="3" marker-end="url(#a)"/>
+    <line x1="659" y1="147" x2="667" y2="147" stroke="#64748b" stroke-width="3" marker-end="url(#a)"/>
+    <line x1="821" y1="147" x2="829" y2="147" stroke="#64748b" stroke-width="3" marker-end="url(#a)"/>
+    <rect x="170" y="248" width="760" height="62" rx="14" fill="#f8fafc" stroke="#cbd5e1"/>
+    <text x="550" y="275" font-size="17" font-weight="700" fill="#334155">今天的主线</text>
+    <text x="550" y="297" font-size="15" fill="#475569">先学会用标准容器保存数据，再用 RAII 管理文件描述符，为后续 Socket 和 epoll 打基础。</text>
+  </g>
+</svg>

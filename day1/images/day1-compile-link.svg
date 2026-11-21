@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="430" viewBox="0 0 1080 430">
+  <rect width="1080" height="430" fill="#ffffff"/>
+  <text x="540" y="42" text-anchor="middle" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="28" font-weight="700" fill="#172033">编译与链接流程</text>
+  <defs>
+    <marker id="arrow2" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#64748b"/>
+    </marker>
+    <marker id="arrow3" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#a855f7"/>
+    </marker>
+  </defs>
+  <g font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" text-anchor="middle">
+    <rect x="60" y="92" width="200" height="86" rx="16" fill="#e0f2fe" stroke="#38bdf8"/>
+    <text x="160" y="127" font-size="19" font-weight="700" fill="#0c4a6e">main.cpp</text>
+    <text x="160" y="153" font-size="14" fill="#334155">程序入口 / 调用函数</text>
+
+    <rect x="60" y="247" width="200" height="86" rx="16" fill="#dcfce7" stroke="#4ade80"/>
+    <text x="160" y="282" font-size="19" font-weight="700" fill="#166534">greet.cpp</text>
+    <text x="160" y="308" font-size="14" fill="#334155">函数实现</text>
+
+    <rect x="350" y="92" width="170" height="86" rx="16" fill="#f8fafc" stroke="#94a3b8"/>
+    <text x="435" y="127" font-size="19" font-weight="700" fill="#334155">main.o</text>
+    <text x="435" y="153" font-size="14" fill="#475569">目标文件</text>
+
+    <rect x="350" y="247" width="170" height="86" rx="16" fill="#f8fafc" stroke="#94a3b8"/>
+    <text x="435" y="282" font-size="19" font-weight="700" fill="#334155">greet.o</text>
+    <text x="435" y="308" font-size="14" fill="#475569">目标文件</text>
+
+    <rect x="620" y="154" width="180" height="116" rx="18" fill="#fef3c7" stroke="#fbbf24"/>
+    <text x="710" y="194" font-size="19" font-weight="700" fill="#92400e">链接器</text>
+    <text x="710" y="221" font-size="14" fill="#475569">解决函数引用</text>
+    <text x="710" y="243" font-size="14" fill="#475569">加入标准库</text>
+
+    <rect x="880" y="166" width="150" height="92" rx="18" fill="#ede9fe" stroke="#a78bfa"/>
+    <text x="955" y="201" font-size="19" font-weight="700" fill="#5b21b6">greet</text>
+    <text x="955" y="227" font-size="14" fill="#475569">可执行文件</text>
+
+    <rect x="355" y="370" width="370" height="38" rx="10" fill="#ffffff" stroke="#c084fc" stroke-dasharray="6 4"/>
+    <text x="540" y="394" font-size="15" fill="#7e22ce">greet.h：向两个 .cpp 提供函数声明</text>
+
+    <line x1="260" y1="135" x2="341" y2="135" stroke="#64748b" stroke-width="3" marker-end="url(#arrow2)"/>
+    <line x1="260" y1="290" x2="341" y2="290" stroke="#64748b" stroke-width="3" marker-end="url(#arrow2)"/>
+    <line x1="520" y1="135" x2="611" y2="190" stroke="#64748b" stroke-width="3" marker-end="url(#arrow2)"/>
+    <line x1="520" y1="290" x2="611" y2="235" stroke="#64748b" stroke-width="3" marker-end="url(#arrow2)"/>
+    <line x1="800" y1="212" x2="871" y2="212" stroke="#64748b" stroke-width="3" marker-end="url(#arrow2)"/>
+    <line x1="540" y1="368" x2="540" y2="342" stroke="#a855f7" stroke-width="2" stroke-dasharray="6 4" marker-end="url(#arrow3)"/>
+  </g>
+</svg>
