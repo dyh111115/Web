@@ -1,11 +1,14 @@
-#include "user.h"
+// 文件功能：用户管理程序入口，读取命令并调用 UserManager 的接口。
+#include "user.h" // 引入 UserManager 的公共接口声明。
 
 #include <iostream>
-#include <string>
+#include <string> // 提供 std::string 保存命令、用户名和密码。
 
+// 函数功能：程序入口，循环处理 add、check、list、quit 命令。
+// 调用格式：由操作系统启动，例如 ./user_app
 int main()
 {
-    UserManager users;
+    UserManager users; // 调用构造函数：UserManager users;
     std::string command;
 
     while (true)
@@ -26,6 +29,7 @@ int main()
             std::cout << "密码: ";
             std::cin >> password;
 
+            // 调用格式：users.addUser(name, password)
             if (users.addUser(name, password))
             {
                 std::cout << "添加成功\n";
@@ -45,6 +49,7 @@ int main()
             std::cout << "密码: ";
             std::cin >> password;
 
+            // 调用格式：users.checkPassword(name, password)
             if (users.checkPassword(name, password))
             {
                 std::cout << "密码正确\n";
@@ -56,7 +61,7 @@ int main()
         }
         else if (command == "list")
         {
-            users.printAll();
+            users.printAll(); // 调用格式：users.printAll();
         }
         else if (command == "quit")
         {
